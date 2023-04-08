@@ -216,3 +216,14 @@
 
 
 
+# import re
+# def check_password(password_):
+#     if (re.search("[0-9]", password_) and re.search("[a-z]", password_) and len(password_)>5):
+#         return True, "valid password"
+#     else:
+#         return False, "not valid password"  
+
+
+# user_password =""
+# print(check_password(user_password))   
+

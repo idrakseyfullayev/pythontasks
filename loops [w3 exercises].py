@@ -658,16 +658,16 @@
 
 
 
-import re
-def check_password(password_):
-    if (re.search("[0-9]", password_) and re.search("[a-z]", password_) and len(password_)>5):
-        return True, "valid password"
-    else:
-        return False, "not valid password"  
+# import re
+# def check_password(password_):
+#     if (re.search("[0-9]", password_) and re.search("[a-z]", password_) and len(password_)>5):
+#         return True, "valid password"
+#     else:
+#         return False, "not valid password"  
 
 
-user_password =""
-print(check_password(user_password))      
+# user_password =""
+# print(check_password(user_password))      
 
 
 
@@ -689,31 +689,104 @@ print(check_password(user_password))
 
 
 
+# 16. Write a Python program to find numbers between 100 and 400 (both included) where each digit of a number is
+# an even number. The numbers obtained should be printed in a comma-separated sequence. Go to the editor
+# Click me to see the sample solution
+
+
+# 16. Ədədin hər bir rəqəminin cüt ədəd olduğu 100 ilə 400 (hər ikisi daxildir) arasındakı ədədləri tapmaq üçün 
+# Python proqramı yazın. Alınan nömrələr vergüllə ayrılmış ardıcıllıqla çap edilməlidir. Redaktora gedin
+# Nümunə həllini görmək üçün mənə klikləyin
 
 
 
+# def check_even_num(x, y):
+#     list1  = []
+#     for i in range(x, y+1):
+#         s = str(i)
+#         for j in range(len(s)):
+#             if int(s[j]) % 2:
+#                 break
+#         else:
+#             list1.append(s)
+#     print(','.join(list1))    
+            
 
 
 
+# num1 = 100
+# num2 = 400
+
+# check_even_num(num1, num2)
 
 
 
+def check_even_num(x, y):
+    list1 = []
+    while x < y+1:
+        s = str(x)
+        j = 0
+        while j < len(s):
+            if int(s[j]) % 2:
+                break
+            j += 1
+        else:
+            list1.append(s)
+        x += 1     
+    print(','.join(list1))
+           
 
 
 
+num1 = 100
+num2 = 400
+
+check_even_num(num1, num2)
 
 
 
+# 5. İki int tipli a və b dəyişəni götürün. a və b aralığında mükəmməl ədədləri çapa verin.
+# (Bütün bölənlərinin cəminə bərabər olan ədəd mükəmməl ədəddir. Məs: 6 = 1+2+3
+# və s.)
+
+# def perfect_num(a, b):
+#     list1 = []
+#     for i in range(a, b+1):
+#         c = 0
+#         for j in range(1, i):
+#             if not i % j:
+#                 c += j
+                
+        
+#         if i == c:
+#             list1.append(str(i))
+#     print(",".join(list1))           
 
 
 
+# a = int(input())
+# b = int(input())
+# perfect_num(a, b)            
 
 
+# def perfect_num(a, b):
+#     list1 = []
+#     while a <= b:
+#         x = 1
+#         c = 0
+#         while x < a:
+#             if not a % x:
+#                 c += x
+#             x +=1
+#         if a == c:
+#             list1.append(str(a))
+#         a += 1
+#     print(", ".join(list1))    
 
+# num1 = int(input())
+# num2 = int(input())
 
-
-
-
+# perfect_num(num1, num2)
 
 
 

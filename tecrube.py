@@ -1568,8 +1568,12 @@ set = {1, 3}
 
 
 
-# a += b
-# print(a)
+ad = "Zamin"
+
+for i in ad:
+    print(i)
+    
+
 
 
 
