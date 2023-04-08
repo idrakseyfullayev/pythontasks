@@ -1,0 +1,145 @@
+<!-- 8. html sehifeden diger html sehifeye kecid ve 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Profil
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item  text-dark" href="#">{{request.user.username}}</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  {% if request.user.is_authenticated %}
+                  <li><a class="dropdown-item text-dark" href="{% url 'account:logout' %}">Logout</a></li>
+                  {% else %}
+                  <li><a class="dropdown-item text-dark" href="{% url 'account:login' %}">Login</a></li>
+                  <li><a class="dropdown-item text-dark" href="{% url 'account:register' %}">Register</a></li>
+                  {% endif %}
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled text-light">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2  text-dark outline-light" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light  text-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+
+  <div class="container mt-3">
+    <h1>Films</h1>
+    <div class="card-group">
+      {% for film in films %}
+      <div  class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0 ">
+          <div class="col-md-4">
+            <a href="{% url 'film:detail' film.id %}"><img src="{{film.poster.url}}" class="img-fluid rounded-start" alt="{{film.name}}"></a>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title"><a href="{% url 'film:detail' film.id %}">{{film.name}}</a></h5> -->
+              <!-- <p class="card-text"><small class="text-muted">{{film.about}}</small></p> -->
+              <!-- <h7><b><a href = "{% url 'film:actors' film.id %}">Actors</a></b></h7>
+              {% for actor in film.actors.all %}
+              <p class="card-text"><small class="text-muted"><ul><li><i><a href="{% url 'film:actor_details' actor.id %}">{{actor}}</a></i> </li></ul></small></p>
+              {% endfor %}
+              <small>Views : {{film.views_number}}</small>
+              <p class="card-text"><small class="text-muted">Published {{film.pub_date}}</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+       {% endfor %}
+
+    </div>
+  </div>
+
+  <div class="container mt-3"><a href="{% url 'account:register' %}"><h3>Register</a></h3></div>
+
+  <ol><div class="container mt-3">
+  {% for account in accounts %}  
+    <li>{{account}}</li>
+  {% endfor %}    
+  </div></ol>
+
+    # video yukleme
+   <div class="container mt-3">
+     <video class="card mb-3" src="{{film.video.url}}" style="max-width: 100%" controls></video>
+    </div>
+    
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body> -->
+
+
+
+
+
+<!-- <body>
+    <h1> {{ heading }}</h1>
+    <p><i>{{paragraph}}</p>
+      
+    
+    <form method="Post">
+        {% csrf_token %} 
+        <input type="text" name = "info">
+        <button type="submit">Send</button>
+
+    </form>
+        
+
+    <form>
+        <input type="text" name="a">
+        <input type="text" name="b">
+        <button type="submit">Topla</button>
+    </form>
+
+    
+    <p>{{a|add:3}}</p>
+    <p>b={{b}}</p>
+    <P>cem={{sum}}</P>
+    <i>{{info}}</i>
+
+    {% if a == "5" %}
+    <p>a-nin qiymeti 5-dir</p>
+    {% else %}
+    <p>a-nin qiymeti 5 deyil</p>
+    {% endif %}
+
+
+
+
+
+</body> -->
+
+
+
+<!-- </html> -->
