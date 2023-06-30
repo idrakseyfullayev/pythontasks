@@ -1,92 +1,92 @@
-# # a = 5
-# # print(a)
-
-# # a="salam"
-# # b="dunya"
-# # c= a + "  " + b*3
-
-# # print(a + "  " + b*3) 
-
-# # a = 5
-
-# # c = float(a)
-
-# # print(type(c))
-
-# # print(c)
-
-
-# # tet = "534"
-
-# # print(int(tet))
-# # a = "223"
-# # b="448"
-
-# # c = int(float(a) + int(b))
-
-# # print(c)
-
-# # a = 34,5
-# # b = 
-
-
-# k = "15"
-
-# b = 20.4
-
-
-# print(type(k))
-
-
-# c = int(k) +b
-# c = float(k) + b
-
-# a = 5.1
-
-# b = 10
-
-# a = a + b
-
-# a += b
-
+# a = 5
 # print(a)
 
-# a = a*b
+# a="salam"
+# b="dunya"
+# c= a + "  " + b*3
+
+# print(a + "  " + b*3) 
+
+# a = 5
+
+# c = float(a)
+
+# print(type(c))
+
+# print(c)
+
+
+# tet = "534"
+
+# print(int(tet))
+# a = "223"
+# b="448"
+
+# c = int(float(a) + int(b))
+
+# print(c)
+
+# a = 34,5
+# b = 
+
+
+k = "15"
+
+b = 20.4
+
+
+print(type(k))
+
+
+c = int(k) +b
+c = float(k) + b
+
+a = 5.1
+
+b = 10
+
+a = a + b
+
+a += b
+
+print(a)
+
+a = a*b
 
 
 
-# a *= b
+a *= b
 
 
 
-# a /= b
+a /= b
 
 
-# print(a)
-
-
-
-# m = 253
-
-# l = 15
-
-# v = m %l
-
-# print(v)
-
-# m %= l
-# print(m)
+print(a)
 
 
 
-# a, b , c  = 18, 25, "24"
+m = 253
 
-#print(a + b, c)
+l = 15
+
+v = m %l
+
+print(v)
+
+m %= l
+print(m)
+
+
+
+a, b , c  = 18, 25, "24"
+
+print(a + b, c)
 
 
 
 
-#### Operatorlar ####
+### Operatorlar ####
 
 # 1. Menimsetme (Assignment) operatoru
 # =
@@ -100,162 +100,162 @@
 # 4. Muqayise (Comparison) operatorlari
 # <, >, <=, >=, ==, !=
 
-#### Variable Convertion ###
+# ### Variable Convertion ###
 
 # 1. to int ==> int()
 # 2. to float ==> float()
 # 3. to str ==> str()
 # 4. Deyisenin tipini qaytarir ==> type()
 
-# a3 = 5
+a3 = 5
 
-# print(a3)
+print(a3)
 
-# ay = 5; bp = 8
+ay = 5; bp = 8
 
-# c = ay + bp
+c = ay + bp
 
-# print(c)
+print(c)
 
-# print(type(c))
+print(type(c))
 
-# k = "Cemil"
+k = "Cemil"
 
-# o = "Ehmedov"
+o = "Ehmedov"
 
-# h = k + " " + o 
+h = k + " " + o 
 
-# print(h)
+print(h)
 
 
-# print(type(h))
+print(type(h))
 
 
 
-# l = 45
+l = 45
 
-# kim = 34.0
+kim = 34.0
 
-# c = l - kim
+c = l - kim
 
-# print(c)
+print(c)
 
-# print(l - kim)
+print(l - kim)
 
 
-# print(type(l - kim))
+print(type(l - kim))
 
 
-# print(type(c))
+print(type(c))
 
 
 
-# j = 12
+j = 12
 
-# v = 10
+v = 10
 
-# l = 14 + j*v
+l = 14 + j*v
 
 
-# vb = "Ahmed"
+vb = "Ahmed"
 
-# # vb = vb + " " + "5"  +","
+# vb = vb + " " + "5"  +","
 
-# vb += " " + "5" + ","
+vb += " " + "5" + ","
 
-# vb = (vb + " ")*10
+vb = (vb + " ")*10
 
 
 
-# print(vb)
+print(vb)
 
 
-# print(l)
+print(l)
 
-# yt = 64
+yt = 64
 
-# rt = 5
+rt = 5
 
-# oi = yt / rt
+oi = yt / rt
 
-# print(oi)
+print(oi)
 
-# print(type(oi))
+print(type(oi))
 
 
 
-# ol = 72
+ol = 72
 
-# lo = 5
+lo = 5
 
-# oll = ol // lo
+oll = ol // lo
 
-# print(oll)
+print(oll)
 
 
 
 
 
-# hyu = 7
+hyu = 7
 
-# lki = 4
+lki = 4
 
-# uuu = hyu % lki
+uuu = hyu % lki
 
-# print(uuu)
+print(uuu)
 
-# yt = 2
+yt = 2
 
-# hj = 6
+hj = 6
 
-# kk = yt ** hj
+kk = yt ** hj
 
-# print(kk)
+print(kk)
 
 
-# rr = 8
+rr = 8
 
-# rr += 10
+rr += 10
 
-# print(rr)
+print(rr)
 
 
 
-# tt = 12
+tt = 12
 
-# tt -= 80
+tt -= 80
 
-# print(tt)
+print(tt)
 
 
 
-# ii = 10
+ii = 10
 
-# ii *= 1273
+ii *= 1273
 
-# print(ii)
+print(ii)
 
 
 
-# ui = 67
+ui = 67
 
-# ui **= 4
+ui **= 4
 
-# ui += 3
+ui += 3
 
 
-# print(ui)
+print(ui)
 
 
-# ty = 45    muzakire olunmali
+ty = 45   # muzakire olunmali
 
-# kl = 15
+kl = 15
 
-# ll = ty + kl
+ll = ty + kl
 
-# ty = str(ty)
+ty = str(ty)
 
-# print(ll)
+print(ll)
 
 
 
@@ -445,41 +445,28 @@ print('"' + g + " " + x + " " + z + "." + '"')
 
 
 
-# python testleri
+# # python testleri
 
 
-a = 7; b =4   #izaha ehtiyac var
+# a = 7; b =4   #izaha ehtiyac var
 
-a, b = b, a
+# a, b = b, a
 
-print(a - b)    
-
-
-
-ty = 45    
-
-kl = 15
-
-ll = ty + kl
-
-ty = str(ty)
-
-print(ll)
-
-print(ty + kl)
+# print(a - b)    
 
 
 
+# ty = 45    
 
+# kl = 15
 
+# ll = ty + kl
 
+# ty = str(ty)
 
+# print(ll)
 
-
-
-
-
-
+# print(ty + kl)
 
 
 

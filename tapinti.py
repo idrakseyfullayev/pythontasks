@@ -227,3 +227,44 @@
 # user_password =""
 # print(check_password(user_password))   
 
+
+
+# a = 0000
+# print(list(str(a)))
+
+
+# st1 = {"A", "B", "C"}
+# st2 = {"B", "C", "D"}
+# print(st2 ^ (st1))
+# print(st2.symmetric_difference(st1))
+
+ 
+# d = {2:30, 1:10, 3:30, 1:40}
+# print(d)
+
+# a = [1, 2, 3,]
+# b = a
+# b.append(5)
+# print(a)
+
+
+# nums = range(1, 1000)
+
+# def is_prime(num):
+#     x = 0
+#     for i in range(2, num):
+#         if not num % i:
+#             x += 1
+            
+#     if x == 0 and num != 1:
+#         return True
+       
+
+
+# primes = list(filter(is_prime, nums))
+# print(primes)          
+
+
+
+  
+

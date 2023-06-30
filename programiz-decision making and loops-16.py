@@ -13,26 +13,26 @@
 # Python Əsas Giriş və Çıxış
 # Mənbə kodu: if...elif...else istifadə edərək
 
-# def check_number(n):
-#     if n > 0:      #   burda number yazdim sehv vermedi??????????????????
-#         return "number is positive"
-#     elif n < 0:
-#         return "number is negative"
-#     else:
-#         return "you enter zero"     
+def check_number(n):
+    if n > 0:      #   burda number yazdim sehv vermedi??????????????????
+        return "number is positive"
+    elif n < 0:
+        return "number is negative"
+    else:
+        return "you enter zero"     
 
-# number = int(input())
-# print(check_number(number))
+number = int(input())
+print(check_number(number))
 
 
 
-# num = float(input("Enter a number: "))
-# if num > 0:
-#    print("Positive number")
-# elif num == 0:
-#    print("Zero")
-# else:
-#    print("Negative number")
+num = float(input("Enter a number: "))
+if num > 0:
+   print("Positive number")
+elif num == 0:
+   print("Zero")
+else:
+   print("Negative number")
 
 
 
@@ -40,14 +40,14 @@
 # edə bilərik.
 # Mənbə kodu: Nested if istifadə
 
-# num = float(input("Enter a number: "))
-# if num >= 0:
-#    if num == 0:
-#        print("Zero")
-#    else:
-#        print("Positive number")
-# else:
-#    print("Negative number")
+num = float(input("Enter a number: "))
+if num >= 0:
+   if num == 0:
+       print("Zero")
+   else:
+       print("Positive number")
+else:
+   print("Negative number")
 
 
 
@@ -72,24 +72,24 @@
 # Qalan 1-dirsə, tək ədəddir.
 
 
-# def check_number(n):
-#     if not n % 2 and n > 0:
-#         return "number is even"
-#     elif n % 2:
-#         return "number is odd"
-#     else:
-#         return "0 is neither odd nor even." 
+def check_number(n):
+    if not n % 2 and n > 0:
+        return "number is even"
+    elif n % 2:
+        return "number is odd"
+    else:
+        return "0 is neither odd nor even." 
 
-# number = int(input("enter number:"))
-# print(check_number(number))
+number = int(input("enter number:"))
+print(check_number(number))
 
 
 
-# num = int(input("Enter a number: "))
-# if (num % 2) == 0:
-#    print("{0} is Even".format(num))
-# else:
-#    print("{0} is Odd".format(num))
+num = int(input("Enter a number: "))
+if (num % 2) == 0:
+   print("{0} is Even".format(num))
+else:
+   print("{0} is Odd".format(num))
 
 
 
@@ -113,42 +113,42 @@
 # 2000-ci il sıçrayış ilidir
 
 
-# def leap_year(n):
-#     if not n % 400:
-#         return f"{n} is leap year" 
-#     elif not n % 4 and n % 100:
-#         return f"{n} is leap year"  
-#     else:
-#         return f"{n} isn't leap year" 
+def leap_year(n):
+    if not n % 400:
+        return f"{n} is leap year" 
+    elif not n % 4 and n % 100:
+        return f"{n} is leap year"  
+    else:
+        return f"{n} isn't leap year" 
 
-#     # return True if (not n % 4 and n % 100) or not n % 400 else False
+    # return True if (not n % 4 and n % 100) or not n % 400 else False
 
-# year = int(input("enter year:"))
-# print(leap_year(year))
+year = int(input("enter year:"))
+print(leap_year(year))
 
 
 
 # Python program to check if year is a leap year or not
 
-# year = 2000
+year = 2000
 
-# # To get year (integer input) from the user
-# # year = int(input("Enter a year: "))
+# To get year (integer input) from the user
+# year = int(input("Enter a year: "))
 
-# # divided by 100 means century year (ending with 00)
-# # century year divided by 400 is leap year
-# if (year % 400 == 0) and (year % 100 == 0):
-#     print("{0} is a leap year".format(year))
+# divided by 100 means century year (ending with 00)
+# century year divided by 400 is leap year
+if (year % 400 == 0) and (year % 100 == 0):
+    print("{0} is a leap year".format(year))
 
-# # not divided by 100 means not a century year
-# # year divided by 4 is a leap year
-# elif (year % 4 ==0) and (year % 100 != 0):
-#     print("{0} is a leap year".format(year))
+# not divided by 100 means not a century year
+# year divided by 4 is a leap year
+elif (year % 4 ==0) and (year % 100 != 0):
+    print("{0} is a leap year".format(year))
 
-# # if not divided by both 400 (century year) and 4 (not century year)
-# # year is not leap year
-# else:
-#     print("{0} is not a leap year".format(year))
+# if not divided by both 400 (century year) and 4 (not century year)
+# year is not leap year
+else:
+    print("{0} is not a leap year".format(year))
 
 
 
@@ -180,19 +180,19 @@
 #num3 = float(input("Üçüncü nömrə daxil edin: "))
 
 
-# num1 = float(input("enter the first numer:"))
-# num2 = float(input("enter the second number:"))
-# num3 = float(input("enter the thrid number:"))
+num1 = float(input("enter the first numer:"))
+num2 = float(input("enter the second number:"))
+num3 = float(input("enter the thrid number:"))
 
-# def to_find_the_largest(n1, n2, n3):
-#     if n1 >= n2 and n1 >= n3:
-#         return f"{n1} is the largest of these numbers"
-#     elif n2 >= n1 and n2 >= n3:
-#         return f"{n2} is the largest of these numbers"
-#     else:
-#         return f"{n3} is the largest of these numbers"
+def to_find_the_largest(n1, n2, n3):
+    if n1 >= n2 and n1 >= n3:
+        return f"{n1} is the largest of these numbers"
+    elif n2 >= n1 and n2 >= n3:
+        return f"{n2} is the largest of these numbers"
+    else:
+        return f"{n3} is the largest of these numbers"
 
-# print(to_find_the_largest(num1, num2, num3))
+print(to_find_the_largest(num1, num2, num3))
 
 
 
@@ -206,18 +206,18 @@
 # num3 = 12
 
 # # uncomment following lines to take three numbers from user
-# #num1 = float(input("Enter first number: "))
-# #num2 = float(input("Enter second number: "))
-# #num3 = float(input("Enter third number: "))
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
 
-# if (num1 >= num2) and (num1 >= num3):
-#    largest = num1
-# elif (num2 >= num1) and (num2 >= num3):
-#    largest = num2
-# else:
-#    largest = num3
+if (num1 >= num2) and (num1 >= num3):
+   largest = num1
+elif (num2 >= num1) and (num2 >= num3):
+   largest = num2
+else:
+   largest = num3
 
-# print("The largest number is", largest)
+print("The largest number is", largest)
 
 
 
@@ -239,32 +239,32 @@
 
 # Misal 1: Bayraq dəyişəninin istifadəsi
 
-# def check_prime_number(n):
-    # for i in range(2, n):
-    #     if not n % i:
-    #         return f"{n} is a composite number"
-    # else:
-    #     if n == 1:
-    #         return f"{n} is neither a prime nor a composite number "
-    #     else:
-    #         return f"{n} is a prime number"
+def check_prime_number(n):
+    for i in range(2, n):
+        if not n % i:
+            return f"{n} is a composite number"
+    else:
+        if n == 1:
+            return f"{n} is neither a prime nor a composite number "
+        else:
+            return f"{n} is a prime number"
 
-    # if n < 1:
-    #     return "Yalnis daxiletme"
-    # elif n == 1:
-    #     return "Ne sadedir ne murekkeb"
-    # for i in range(2, n):
-    #     if not n % i:
-    #         return "Murekkebdir"
-    # else:
-    #     return "Sadedir"
+    if n < 1:
+        return "Yalnis daxiletme"
+    elif n == 1:
+        return "Ne sadedir ne murekkeb"
+    for i in range(2, n):
+        if not n % i:
+            return "Murekkebdir"
+    else:
+        return "Sadedir"
 
-    # x = 0
-    # for i in range(2, n):
-    #     if not n % i:
-    #         x = 1
+    x = 0
+    for i in range(2, n):
+        if not n % i:
+            x = 1
 
-    # return "Sade" if not x else "Murekkeb"
+    return "Sade" if not x else "Murekkeb"
             
 
 #     """
@@ -287,24 +287,24 @@
 # #num = int(input("Enter a number: "))
 
 # # define a flag variable
-# flag = False
+flag = False
 
-# if num == 1:
-#     print(num, "is not a prime number")
-# elif num > 1:
-#     # check for factors
-#     for i in range(2, num):
-#         if (num % i) == 0:
-#             # if factor is found, set flag to True
-#             flag = True
-#             # break out of loop
-#             break
+if num == 1:
+    print(num, "is not a prime number")
+elif num > 1:
+    # check for factors
+    for i in range(2, num):
+        if (num % i) == 0:
+            # if factor is found, set flag to True
+            flag = True
+            # break out of loop
+            break
 
-#     # check if flag is True
-#     if flag:
-#         print(num, "is not a prime number")
-#     else:
-#         print(num, "is a prime number")
+    # check if flag is True
+    if flag:
+        print(num, "is not a prime number")
+    else:
+        print(num, "is a prime number")
      
 
 # Bu proqramda biz numun əsas olub olmadığını yoxladıq. 1-dən kiçik və ya ona bərabər olan ədədlər sadə ədədlər deyil. 
@@ -337,17 +337,17 @@
 # To take input from the user
 #num = int(input("Enter a number: "))
 
-# if num <= 1:
-#     print(num, "is not a prime number")
-# elif num > 1:
-#    # check for factors
-#    for i in range(2,num):
-#        if (num % i) == 0:
-#            print(num,"is not a prime number")
-#            print(i,"times",num//i,"is",num)
-#            break
-#    else:
-#        print(num,"is a prime number")
+if num <= 1:
+    print(num, "is not a prime number")
+elif num > 1:
+   # check for factors
+   for i in range(2,num):
+       if (num % i) == 0:
+           print(num,"is not a prime number")
+           print(i,"times",num//i,"is",num)
+           break
+   else:
+       print(num,"is a prime number")
        
 # # if input number is less than
 # # or equal to 1, it is not prime
@@ -382,56 +382,56 @@
 
 # Python proqramı bütün sadə nömrələri intervalda göstərmək üçün
 
-# lower = int(input())
-# upper = int(input())
+lower = int(input())
+upper = int(input())
 
-# def check_prime_numbers(n, z):
-#     for i in range(n+1, z):
-#         c1 = 0
-#         for j in range(2, i):
-#             if not i % j:
-#                 c1 += 1
-#                 break
-#         if c1 == 0:
-#             print(i, end=", ")
+def check_prime_numbers(n, z):
+    for i in range(n+1, z):
+        c1 = 0
+        for j in range(2, i):
+            if not i % j:
+                c1 += 1
+                break
+        if c1 == 0:
+            print(i, end=", ")
 
-# check_prime_numbers(lower, upper)
-# print()  ## ezber yadimda qalib mentiqi olaraq niye alta gonderir setri bilmedim?????????????????
+check_prime_numbers(lower, upper)
+print()  ## ezber yadimda qalib mentiqi olaraq niye alta gonderir setri bilmedim?????????????????
 
 
 # Muellfifin yazdigina baxanda sonra bildim ki bu cur de yazmaq olardi!!!!!!!!!!!!!!!!!!!!!
 ##################################
-# lower = int(input())
-# upper = int(input())
+lower = int(input())
+upper = int(input())
 
-# def check_prime_numbers(n, z):
-#     for i in range(n+1, z):
-#         for j in range(2, i):
-#             if not i % j:
-#                 break
-#         else:            
-#             print(i, end=", ")
+def check_prime_numbers(n, z):
+    for i in range(n+1, z):
+        for j in range(2, i):
+            if not i % j:
+                break
+        else:            
+            print(i, end=", ")
 
-# check_prime_numbers(lower, upper)
-# print()
+check_prime_numbers(lower, upper)
+print()
 ###################################
 
 
 # Python program to display all the prime numbers within an interval
 
-# lower = 900
-# upper = 1000
+lower = 900
+upper = 1000
 
-# print("Prime numbers between", lower, "and", upper, "are:")
+print("Prime numbers between", lower, "and", upper, "are:")
 
-# for num in range(lower, upper + 1):
-#    # all prime numbers are greater than 1
-#    if num > 1:
-#        for i in range(2, num):
-#            if (num % i) == 0:
-#                break
-#        else:
-#            print(num)
+for num in range(lower, upper + 1):
+   # all prime numbers are greater than 1
+   if num > 1:
+       for i in range(2, num):
+           if (num % i) == 0:
+               break
+       else:
+           print(num)
 
 
 
@@ -460,20 +460,20 @@
 # İstifadəçidən məlumat almaq üçün
 #num = int(input("Nömrə daxil edin: "))
 
-# faktorial = 1
+faktorial = 1
 
 
-# def fact(n):
-#     if n < 0:
-#         return "Factorial is not defined for negative numbers"
-#     else:    
-#         c1 = 1
-#         for i in range(2, n+1):
-#             c1 *= i
-#         return f"{n} factorial is {c1}"
+def fact(n):
+    if n < 0:
+        return "Factorial is not defined for negative numbers"
+    else:    
+        c1 = 1
+        for i in range(2, n+1):
+            c1 *= i
+        return f"{n} factorial is {c1}"
         
-# num = int(input())
-# print(fact(num))
+num = int(input())
+print(fact(num))
 
 
 
@@ -485,17 +485,17 @@
 # # # To take input from the user
 # # #num = int(input("Enter a number: "))
 
-# factorial = 1
+factorial = 1
 
-# # check if the number is negative, positive or zero
-# if num < 0:
-#    print("Sorry, factorial does not exist for negative numbers")
-# elif num == 0:
-#    print("The factorial of 0 is 1")
-# else:
-#    for i in range(1,num + 1):
-#        factorial = factorial*i
-#    print("The factorial of",num,"is",factorial)
+# check if the number is negative, positive or zero
+if num < 0:
+   print("Sorry, factorial does not exist for negative numbers")
+elif num == 0:
+   print("The factorial of 0 is 1")
+else:
+   for i in range(1,num + 1):
+       factorial = factorial*i
+   print("The factorial of",num,"is",factorial)
 
 
 # Qeyd: Proqramı fərqli nömrə üçün yoxlamaq üçün num dəyərini dəyişdirin.
@@ -520,43 +520,45 @@
 # Python program to find the factorial of a number provided by the user
 # using recursion
 
-# def factorial(x):
-#     """This is a recursive function
-#     to find the factorial of an integer"""
+def factorial(x):
+    """This is a recursive function
+    to find the factorial of an integer"""
 
-#     if x == 1:
-#         return 1
-#     else:
-#         # recursive call to the function
-#         return (x * factorial(x-1))
+    if x == 1:
+        return 1
+    else:
+        # recursive call to the function
+        return (x * factorial(x-1))
 
 
 # # change the value for a different result
-# num = 7
+num = 7
 
 # # to take input from the user
-# # num = int(input("Enter a number: "))
+num = int(input("Enter a number: "))
 
+
+from math import factorial
 # # call the factorial function
-# result = factorial(num)
-# print("The factorial of", num, "is", result)
+result = factorial(num)
+print("The factorial of", num, "is", result)
 
 
 # Muellifin funksiyasi menfi ve sifir ededlerde error verirdi, istedim try except ile duzeldim alinmadi?
 # Ancaq bu cur duzelis verdim
 ###############################################
-# def factorial(x):
-#     if x == 1 or x ==0:
-#         return 1
-#     else:
-#         return (x * factorial(x-1))
+def factorial(x):
+    if x == 1 or x ==0:
+        return 1
+    else:
+        return (x * factorial(x-1))
 
-# num = int(input())
-# if num < 0:
-#     print("Factorial is not defined for negative numbers")
-# else:    
-#     y = factorial(num)
-#     print(f"{num} factorial is {y}")
+num = int(input())
+if num < 0:
+    print("Factorial is not defined for negative numbers")
+else:    
+    y = factorial(num)
+    print(f"{num} factorial is {y}")
 #################################################
 
 
@@ -586,22 +588,22 @@
 
 # lambda ile yazdim!
 ###############################################
-# n = int(input())
-# list1 = list(map(lambda n: 12*n, range(1, n)))   
+n = int(input())
+list1 = list(map(lambda n: 12*n, range(1, n)))   
 
-# c1 = 0
-# for i in list1:
-#     c1 +=1
-#     print(f"12^{c1} = {i}")
+c1 = 0
+for i in list1:
+    c1 +=1
+    print(f"12^{c1} = {i}")
 ###############################################
 
 
-# def multiplication_table_of_12(n):
-#     for i in range(1, n):
-#         print(f"12^{i} = {12*i}")
+def multiplication_table_of_12(n):
+    for i in range(1, n):
+        print(f"12^{i} = {12*i}")
 
-# multiply_number = int(input())
-# multiplication_table_of_12(multiply_number)
+multiply_number = int(input())
+multiplication_table_of_12(multiply_number)
 
 
 
@@ -613,8 +615,8 @@
 # # num = int(input("Display multiplication table of? "))
 
 # # Iterate 10 times from i = 1 to 10
-# for i in range(1, 11):
-#    print(num, 'x', i, '=', num*i)
+for i in range(1, 11):
+   print(num, 'x', i, '=', num*i)
 
 
 # Burada 10 dəfə təkrarlamaq üçün interval() funksiyası ilə birlikdə for loopundan istifadə etdik. range() funksiyasının
@@ -644,68 +646,68 @@
 # Mənbə kodu
 # n-ci dövrə qədər Fibonacci ardıcıllığını göstərmək üçün proqram
 
-# nterms = int(input("Neçə termin? "))
+nterms = int(input("Neçə termin? "))
 
-# # ilk iki müddət
-# n1, n2 = 0, 1
-# say = 0
+# ilk iki müddət
+n1, n2 = 0, 1
+say = 0
 
-# def Fibonacci(n):
-#     n1 = 0
-#     n2 = 1
-#     print(n1)
-#     print(n2)
-#     for i in range(3, n+1):
-#         n3 = n1 + n2
-#         n1 = n2
-#         n2 = n3
-#         print(n3)
+def Fibonacci(n):
+    n1 = 0
+    n2 = 1
+    print(n1)
+    print(n2)
+    for i in range(3, n+1):
+        n3 = n1 + n2
+        n1 = n2
+        n2 = n3
+        print(n3)
         
 
-# num = int(input())
-# Fibonacci(num)
+num = int(input())
+Fibonacci(num)
 
 
 
-# def Fibonacci(n):
-#     if n == 1:
-#         return 0
-#     elif n == 2:
-#         return 1
-#     else:
-#         return Fibonacci(n-1) + Fibonacci(n-2)
+def Fibonacci(n):
+    if n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    else:
+        return Fibonacci(n-1) + Fibonacci(n-2)
 
-# num = int(input())
-# for i in range(1, num+1):
-#     print(Fibonacci(i))
+num = int(input())
+for i in range(1, num+1):
+    print(Fibonacci(i))
 
 
 
 # Program to display the Fibonacci sequence up to n-th term
 
-# nterms = int(input("How many terms? "))
+nterms = int(input("How many terms? "))
 
-# # first two terms
-# n1, n2 = 0, 1
-# count = 0
+# first two terms
+n1, n2 = 0, 1
+count = 0
 
-# # check if the number of terms is valid
-# if nterms <= 0:
-#    print("Please enter a positive integer")
-# # if there is only one term, return n1
-# elif nterms == 1:
-#    print("Fibonacci sequence upto",nterms,":")
-#    print(n1)
-# # generate fibonacci sequence
-# else:
-#    print("Fibonacci sequence:")
-#    while count < nterms:
-#        print(n1)
-#        nth = n1 + n2
-#        # update values
-#        n1 = n2
-#        n2 = nth
-#        count += 1
+# check if the number of terms is valid
+if nterms <= 0:
+   print("Please enter a positive integer")
+# if there is only one term, return n1
+elif nterms == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
+# generate fibonacci sequence
+else:
+   print("Fibonacci sequence:")
+   while count < nterms:
+       print(n1)
+       nth = n1 + n2
+       # update values
+       n1 = n2
+       n2 = nth
+       count += 1
 
 
 
@@ -730,27 +732,27 @@
 # Nömrənin Armstrong nömrəsi olub-olmadığını yoxlamaq üçün # Python proqramı
 
 # istifadəçidən giriş götürün
-# num = int(input("Nömrə daxil edin:"))
+num = int(input("Nömrə daxil edin:"))
 
 
-# def check_Armstrong_number(n):
-#     n = str(n)
-#     z = 0
-#     for i in n:
-#         z += (int(i))**len(n)
-#     if int(n) == z:
-#         return f"{int(n)} is Armstrong number"
-#     else:
-#         return f"{int(n)}  isn't Armstrong number"
+def check_Armstrong_number(n):
+    n = str(n)
+    z = 0
+    for i in n:
+        z += (int(i))**len(n)
+    if int(n) == z:
+        return f"{int(n)} is Armstrong number"
+    else:
+        return f"{int(n)}  isn't Armstrong number"
 
 
-# num = int(input("enter number:"))
-# if num < 0:
-#     print("you enter negativ number")
-# elif num == 0:
-#     print("you enter zero")    
-# else:    
-#     print(check_Armstrong_number(num))
+num = int(input("enter number:"))
+if num < 0:
+    print("you enter negativ number")
+elif num == 0:
+    print("you enter zero")    
+else:    
+    print(check_Armstrong_number(num))
 
 
 
@@ -760,20 +762,20 @@
 # num = int(input("Enter a number: "))
 
 # # initialize sum
-# sum = 0
+sum = 0
 
 # # find the sum of the cube of each digit
-# temp = num
-# while temp > 0:
-#    digit = temp % 10
-#    sum += digit ** 3
-#    temp //= 10
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** 3
+   temp //= 10
 
 # # display the result
-# if num == sum:
-#    print(num,"is an Armstrong number")
-# else:
-#    print(num,"is not an Armstrong number")
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
 
 
 # Burada istifadəçidən nömrə istəyirik və onun Armstrong nömrəsi olub-olmadığını yoxlayırıq.
@@ -787,47 +789,47 @@
 
 # Mənbə Kodu: Armstrongun n rəqəminin sayını yoxlayın
 
-# num = 1634
+num = 1634
 
-# # # Changed num variable to string, 
-# # # and calculated the length (number of digits)
-# order = len(str(num))
+# # Changed num variable to string, 
+# # and calculated the length (number of digits)
+order = len(str(num))
 
-# # initialize sum
-# sum = 0
+# initialize sum
+sum = 0
 
-# # find the sum of the cube of each digit
-# temp = num
-# while temp > 0:
-#    digit = temp % 10
-#    sum += digit ** order
-#    temp //= 10
+# find the sum of the cube of each digit
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** order
+   temp //= 10
 
-# # display the result
-# if num == sum:
-#    print(num,"is an Armstrong number")
-# else:
-#    print(num,"is not an Armstrong number")
+# display the result
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
 
 # Mənbə kodundakı num dəyərini dəyişdirə və test etmək üçün yenidən işə sala bilərsiniz.
 
 
 #  def-e yazim bunu!!!!!!!!!!!
 
-# def check_number(n):
-#    sum = 0
-#    x = len(str(n))
-#    z = n
-#    while z > 0:
-#       sum += (z % 10)**x
-#       z //= 10 
-#    if n == sum:
-#       return f"{n} is Armstrong number"
-#    else:
-#       return f"{n} isn't Armstrong number "    
+def check_number(n):
+   sum = 0
+   x = len(str(n))
+   z = n
+   while z > 0:
+      sum += (z % 10)**x
+      z //= 10 
+   if n == sum:
+      return f"{n} is Armstrong number"
+   else:
+      return f"{n} isn't Armstrong number "    
 
-# num = int(input("enter number:"))
-# print(check_number(num))
+num = int(input("enter number:"))
+print(check_number(num))
 
 
 
@@ -852,56 +854,56 @@
 # Mənbə kodu
 # Armstrong nömrələrini müəyyən intervalda yoxlamaq üçün proqram
 
-# lower = 100
-# upper = 2000
+lower = 100
+upper = 2000
 
 
-# def check_Armstrong_number(n, z):
-#    c1 = 0
-#    for i in range(n, z+1):
-#       sum = 0
-#       x = len(str(i)) # x = 4
+def check_Armstrong_number(n, z):
+   c1 = 0
+   for i in range(n, z+1):
+      sum = 0
+      x = len(str(i)) # x = 4
 
-#       for j in str(i):
-#         sum += int(j)**x
+      for j in str(i):
+        sum += int(j)**x
 
 
-#     #   z = i
-#     #   while z > 0:
-#     #      sum += (z % 10)**x
-#     #      z //= 10
-#       if i == sum:
-#          c1 = 1
-#          print(i, end=", ")
-#    if c1 == 0:
-#       print("There are not Armstrong numbers")      
+    #   z = i
+    #   while z > 0:
+    #      sum += (z % 10)**x
+    #      z //= 10
+      if i == sum:
+         c1 = 1
+         print(i, end=", ")
+   if c1 == 0:
+      print("There are not Armstrong numbers")      
                  
-# lower = int(input("enter number:"))
-# upper = int(input("enter nunmber:"))
-# check_Armstrong_number(lower, upper)
+lower = int(input("enter number:"))
+upper = int(input("enter nunmber:"))
+check_Armstrong_number(lower, upper)
 
 
 # Program to check Armstrong numbers in a certain interval
 
-# lower = 100
-# upper = 2000
+lower = 100
+upper = 2000
 
-# for num in range(lower, upper + 1):
+for num in range(lower, upper + 1):
 
-#    # order of number
-#    order = len(str(num))
+   # order of number
+   order = len(str(num))
     
-#    # initialize sum
-#    sum = 0
+   # initialize sum
+   sum = 0
 
-#    temp = num
-#    while temp > 0:
-#        digit = temp % 10
-#        sum += digit ** order
-#        temp //= 10
+   temp = num
+   while temp > 0:
+       digit = temp % 10
+       sum += digit ** order
+       temp //= 10
 
-#    if num == sum:
-#        print(num)
+   if num == sum:
+       print(num)
 
 
 # Burada biz dəyişən aşağı həddi 100, yuxarı dəyişəndə ​​isə yuxarı həddi 2000 təyin etdik. Dəyişən aşağıdan yuxarıya
@@ -931,31 +933,31 @@
 # sayı = 16
 
 
-# def find_the_sum(n):
-#    sum = 0
-#    for i in range(1, n+1):
-#       sum += i
-#    return f"Sum_{n} = {sum}"
+def find_the_sum(n):
+   sum = 0
+   for i in range(1, n+1):
+      sum += i
+   return f"Sum_{n} = {sum}"
 
-# number = int(input())
-# print(find_the_sum(number))
+number = int(input())
+print(find_the_sum(number))
 
 
 
 
 # Sum of natural numbers up to num
 
-# num = 16
+num = 16
 
-# if num < 0:
-#    print("Enter a positive number")
-# else:
-#    sum = 0
-#    # use while loop to iterate until zero
-#    while(num > 0):
-#        sum += num
-#        num -= 1
-#    print("The sum is", sum)
+if num < 0:
+   print("Enter a positive number")
+else:
+   sum = 0
+   # use while loop to iterate until zero
+   while(num > 0):
+       sum += num
+       num -= 1
+   print("The sum is", sum)
 
 
 # Qeyd: Proqramı fərqli nömrə üçün yoxlamaq üçün num dəyərini dəyişdirin.
@@ -972,11 +974,11 @@
 # Növbəniz: Aşağıdakı düsturdan istifadə edərək natural ədədlərin cəmini tapmaq üçün yuxarıdakı proqramı dəyişdirin.
 
 
-# def find_the_sum(n):
-#    return f"Sum_{n} = {(n*(n+1)) / 2}"
+def find_the_sum(n):
+   return f"Sum_{n} = {(n*(n+1)) / 2}"
 
-# number = int(input())
-# print(find_the_sum(number))
+number = int(input())
+print(find_the_sum(number))
 
 
 
@@ -1010,30 +1012,30 @@
 # * * * * *
 
   
-# def half_pyramid(n):
-#     for i in range(1, n+1):
-#         print("* " * i)
+def half_pyramid(n):
+    for i in range(1, n+1):
+        print("* " * i)
 
-# num = int(input())
-# half_pyramid(num)
-
-
-
-# rows = int(input("Enter number of rows: "))
-
-# for i in range(rows):
-#     for j in range(i+1):
-#         print("* ", end="")
-#     print()
+num = int(input())
+half_pyramid(num)
 
 
 
-# rows = int(input("Enter number of rows: "))
+rows = int(input("Enter number of rows: "))
 
-# for i in range(rows):
-#     for j in range(i+1):
-#         print("* ", end="")
-#     print("\n")
+for i in range(rows):
+    for j in range(i+1):
+        print("* ", end="")
+    print()
+
+
+
+rows = int(input("Enter number of rows: "))
+
+for i in range(rows):
+    for j in range(i+1):
+        print("* ", end="")
+    print("\n")
 
 
 
@@ -1057,38 +1059,38 @@
 # 1 2 3 4 5
 
 
-# def half_pyramid_using_number(n):
-#     str1 = ""
-#     for i in range(1, n+1):
-#         str1 += str(i) + " "
-#         print(str1)
-#         # print()
+def half_pyramid_using_number(n):
+    str1 = ""
+    for i in range(1, n+1):
+        str1 += str(i) + " "
+        print(str1)
+        # print()
         
-# num = int(input())
-# half_pyramid_using_number(num)
+num = int(input())
+half_pyramid_using_number(num)
 
 
 
 
-# def half_pyramid_number(n):
-#     for i in range(0, n):
-#         for j in range(1, i+1+1):
-#             print(j, end=" ")
-#         print()
+def half_pyramid_number(n):
+    for i in range(0, n):
+        for j in range(1, i+1+1):
+            print(j, end=" ")
+        print()
 
-# num = int(input())
-# half_pyramid_number(num)
-
-
+num = int(input())
+half_pyramid_number(num)
 
 
 
-# rows = int(input("Enter number of rows: "))
 
-# for i in range(rows):
-#     for j in range(i+1):
-#         print(j+1, end=" ")
-#     print("\n")
+
+rows = int(input("Enter number of rows: "))
+
+for i in range(rows):
+    for j in range(i+1):
+        print(j+1, end=" ")
+    print("\n")
 
 
 # Yuxarıdakı proqramda nümunənin necə çap edildiyinə baxaq.
@@ -1102,28 +1104,28 @@
 
 # Misal 3: Əlifbalardan istifadə edərək yarım piramida çap etmək üçün proqram
 
-# def pyramid_using_alphabets(alphabet): 
-#     alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-#     x = alphabets.index(alphabet)
-#     for i in range(x+1):
-#         print((alphabets[i] + " ") * (i+1))
+def pyramid_using_alphabets(alphabet): 
+    alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    x = alphabets.index(alphabet)
+    for i in range(x+1):
+        print((alphabets[i] + " ") * (i+1))
 
-# alphabet = input()
-# pyramid_using_alphabets(alphabet)
+alphabet = input()
+pyramid_using_alphabets(alphabet)
 
 
 
-# rows = int(input("Enter number of rows: "))
+rows = int(input("Enter number of rows: "))
 
-# ascii_value = 65
+ascii_value = 65
 
-# for i in range(rows):
-#     for j in range(i+1):
-#         alphabet = chr(ascii_value)
-#         print(alphabet, end=" ")
+for i in range(rows):
+    for j in range(i+1):
+        alphabet = chr(ascii_value)
+        print(alphabet, end=" ")
     
-#     ascii_value += 1
-#     print("\n")
+    ascii_value += 1
+    print("\n")
 
 
 
@@ -1145,46 +1147,46 @@
 # *
 
 
-# def half_pyramid(n):
-#     for i in range(n, 0, -1):
-#         print("* " * i)
+def half_pyramid(n):
+    for i in range(n, 0, -1):
+        print("* " * i)
 
-# num = int(input())
-# half_pyramid(num)
+num = int(input())
+half_pyramid(num)
 
 
 
-# def half_pramid(n):
-#     for i in range(n, 0, -1):
+def half_pramid(n):
+    for i in range(n, 0, -1):
     
-#         print("*" * i)
+        print("*" * i)
 
-# num = int(input())
-# half_pramid(num)
-
-
-
-
-# def half_pramid(n):
-#     for i in range(n, 0, -1):
-#         for j in range(i):
-#             print("*", end="")
-#         print()    
-
-# num = int(input())
-# half_pramid(num)
+num = int(input())
+half_pramid(num)
 
 
 
 
+def half_pramid(n):
+    for i in range(n, 0, -1):
+        for j in range(i):
+            print("*", end="")
+        print()    
 
-# rows = int(input("Enter number of rows: "))
+num = int(input())
+half_pramid(num)
 
-# for i in range(rows, 0, -1):
-#     for j in range(0, i):
-#         print("* ", end=" ")
+
+
+
+
+rows = int(input("Enter number of rows: "))
+
+for i in range(rows, 0, -1):
+    for j in range(0, i):
+        print("* ", end=" ")
     
-#     print("\n")
+    print("\n")
 
 
 # Bu nümunə dik piramidaya bənzəyir, istisna olmaqla, burada biz cərgələrin ümumi sayından başlayırıq və hər
@@ -1201,44 +1203,44 @@
 # 1
 
 
-# def inverted_half_pyramid_using_numbers(n):
-    # str1 = ""
-    # for i in range(1, n+1):
-    #     str1 += str(i)
-    # for i in range(len(str1), 0, -1):
-    #     str2 =" ".join(str1[0:i])
-    #     print(str2)
-    #     # print()
+def inverted_half_pyramid_using_numbers(n):
+    str1 = ""
+    for i in range(1, n+1):
+        str1 += str(i)
+    for i in range(len(str1), 0, -1):
+        str2 =" ".join(str1[0:i])
+        print(str2)
+        # print()
 
-#     for i in range(n, 0, -1):
-#         for j in range(1, i+1):
-#             print(j, end=" ")
-#         print()
+    for i in range(n, 0, -1):
+        for j in range(1, i+1):
+            print(j, end=" ")
+        print()
 
-# num = int(input())
-# inverted_half_pyramid_using_numbers(num)
-
-
-
-# def inverted_half_pyramid_using_number(n):
-#     for i in range(n, 0, -1):
-#         for j in range(1,i+1):
-#             print(j, end=" ")
-#         print()    
-
-# num = int(input())
-# inverted_half_pyramid_using_number(num)
+num = int(input())
+inverted_half_pyramid_using_numbers(num)
 
 
 
+def inverted_half_pyramid_using_number(n):
+    for i in range(n, 0, -1):
+        for j in range(1,i+1):
+            print(j, end=" ")
+        print()    
 
-# rows = int(input("Enter number of rows: "))
+num = int(input())
+inverted_half_pyramid_using_number(num)
 
-# for i in range(rows, 0, -1):
-#     for j in range(1, i+1):
-#         print(j, end=" ")
 
-#     print("\n")
+
+
+rows = int(input("Enter number of rows: "))
+
+for i in range(rows, 0, -1):
+    for j in range(1, i+1):
+        print(j, end=" ")
+
+    print("\n")
 
 
 # Rəqəmlərdən istifadə edən dik və tərs piramida arasındakı yeganə fərq, birinci döngənin cərgələrin ümumi 
@@ -1257,51 +1259,51 @@
 # * * * * * * * * *
 
 
-# def full_pyramids(n):
-#     for i in range(n-1, -1, -1):
-#         print(("* " * ((2*n-1)-(2*i))).center((2*n-1)*2))
+def full_pyramids(n):
+    for i in range(n-1, -1, -1):
+        print(("* " * ((2*n-1)-(2*i))).center((2*n-1)*2))
 
-# num = int(input())
-# full_pyramids(num)
+num = int(input())
+full_pyramids(num)
 
 
 #######################################################################
-# def pyramid(n):
-#     for i in range(1, n+1, 2):
-#         print(("*" * i).center(n))
+def pyramid(n):
+    for i in range(1, n+1, 2):
+        print(("*" * i).center(n))
 
-# num = int(input())
-# pyramid(num)
+num = int(input())
+pyramid(num)
 ######################################################################
-# def pyramid(n):
-#     for i in range(1, n+1, 2):
-#         x = ("*" * i).center(n)
-#         y =" ".join(x)
-#         print(y)
+def pyramid(n):
+    for i in range(1, n+1, 2):
+        x = ("*" * i).center(n)
+        y =" ".join(x)
+        print(y)
 
-# num = int(input())
-# pyramid(num)
+num = int(input())
+pyramid(num)
 #########################################################################
 
 
 
 ####  ele de yaxsi anlamadim?????????????????????????????????
 
-# rows = int(input("Enter number of rows: "))
+rows = int(input("Enter number of rows: "))
 
-# k = 0
+k = 0
 
-# for i in range(1, rows+1):
-#     for space in range(1, (rows-i)+1):
-#         print(end="  ")
+for i in range(1, rows+1):
+    for space in range(1, (rows-i)+1):
+        print(end="  ")
    
-#     # while k!=(2*i-1):
-#     #     print("* ", end="")
-#     #     k += 1
+    # while k!=(2*i-1):
+    #     print("* ", end="")
+    #     k += 1
 
-#     for j in range(1, 2*i):
-#         print("* ", end="")
-#     print()
+    for j in range(1, 2*i):
+        print("* ", end="")
+    print()
 
 
 # Bu piramida növü yuxarıda tədqiq etdiyimizlərdən bir qədər mürəkkəbdir.
@@ -1324,67 +1326,67 @@
 
 
 
-# n = int(input())
+n = int(input())
 
-# for i in range(1, n + 1):
-#     x = i
-#     for k in range(1, n-i+1):
-#         print(" ", end=" ")
-#     for j in range(1, 2*i):
-#         print(i+j-1, end=" ")
+for i in range(1, n + 1):
+    x = i
+    for k in range(1, n-i+1):
+        print(" ", end=" ")
+    for j in range(1, 2*i):
+        print(i+j-1, end=" ")
 
-#     print()
-
-
+    print()
 
 
 
-# num = int(input())
 
-# def full_pyramid_of_numbers(n):
-#     for i in range(1, n + 1):
-#         for k in range(1, n-i+1):
-#             print(" ", end=" ")
-#         for j in range(i, 2*i):
-#             print(j, end=" ")    
-#         for z in range(2*i-2, i-1, -1):
 
-#             # if x == 0:
-#             #     break
-#             print(z, end=" ")
-#             # if z == i+1:
-#          #     break  
+num = int(input())
+
+def full_pyramid_of_numbers(n):
+    for i in range(1, n + 1):
+        for k in range(1, n-i+1):
+            print(" ", end=" ")
+        for j in range(i, 2*i):
+            print(j, end=" ")    
+        for z in range(2*i-2, i-1, -1):
+
+            # if x == 0:
+            #     break
+            print(z, end=" ")
+            # if z == i+1:
+         #     break  
         
-#         print()
+        print()
      
-# full_pyramid_of_numbers(num)
+full_pyramid_of_numbers(num)
 
 
 
 
 
-# rows = int(input("Enter number of rows: "))
+rows = int(input("Enter number of rows: "))
 
-# k = 0
-# count=0
-# count1=0
+k = 0
+count=0
+count1=0
 
-# for i in range(1, rows+1):
-#     for space in range(1, (rows-i)+1):
-#         print("  ", end="")
-#         count+=1
+for i in range(1, rows+1):
+    for space in range(1, (rows-i)+1):
+        print("  ", end="")
+        count+=1
     
-#     while k!=((2*i)-1):
-#         if count<=rows-1:
-#             print(i+k, end=" ")
-#             count+=1
-#         else:
-#             count1+=1
-#             print(i+k-(2*count1), end=" ")
-#         k += 1
+    while k!=((2*i)-1):
+        if count<=rows-1:
+            print(i+k, end=" ")
+            count+=1
+        else:
+            count1+=1
+            print(i+k-(2*count1), end=" ")
+        k += 1
     
-#     count1 = count = k = 0
-#     print()
+    count1 = count = k = 0
+    print()
 
 
 # 6-cı misal kimi, bu nümunə də for döngəsi daxilində iki döngədən istifadə edir.
@@ -1409,49 +1411,49 @@
 
 
 
-# def  Inverted_full_pyramid_of(n):
-#     for i in range(n):
-#         print(("* " * ((2*n-1)-(2*i))).center((2*n-1)*2))
+def  Inverted_full_pyramid_of(n):
+    for i in range(n):
+        print(("* " * ((2*n-1)-(2*i))).center((2*n-1)*2))
 
-# num = int(input())
-# Inverted_full_pyramid_of(num)
+num = int(input())
+Inverted_full_pyramid_of(num)
         
 
 
-# def Inverted_full_pyramid_of(n):
-#     for i in range(n, 0, -2):
-#         print(("* " * i).center(n*2))
+def Inverted_full_pyramid_of(n):
+    for i in range(n, 0, -2):
+        print(("* " * i).center(n*2))
 
-# num = int(input())
-# Inverted_full_pyramid_of(num)
-
-
+num = int(input())
+Inverted_full_pyramid_of(num)
 
 
-# def Inverted_full_pyramid_of(n):
-#     for i in range(n, 0, -1):
-#         for j in range(1, n-i+1):
-#             print(" ", end=" ")
+
+
+def Inverted_full_pyramid_of(n):
+    for i in range(n, 0, -1):
+        for j in range(1, n-i+1):
+            print(" ", end=" ")
         
-#         for j in range(2*i, 1, -1):
-#             print("* ", end="")
-#         print()      
+        for j in range(2*i, 1, -1):
+            print("* ", end="")
+        print()      
 
-# num = int(input())
-# Inverted_full_pyramid_of(num)
+num = int(input())
+Inverted_full_pyramid_of(num)
 
 
 
-# rows = int(input("Enter number of rows: "))
+rows = int(input("Enter number of rows: "))
 
-# for i in range(rows, 1, -1):
-#     for space in range(0, rows-i):
-#         print("  ", end="")
-#     for j in range(i, 2*i-1):
-#         print("* ", end="")
-#     for j in range(1, i-1):
-#         print("* ", end="")
-#     print()
+for i in range(rows, 1, -1):
+    for space in range(0, rows-i):
+        print("  ", end="")
+    for j in range(i, 2*i-1):
+        print("* ", end="")
+    for j in range(1, i-1):
+        print("* ", end="")
+    print()
 
 
 # Bu nümunədə biz cəmi 4 for döngəsindən istifadə etdik.
@@ -1471,19 +1473,19 @@
 
 
 
-# num = int(input())
-# def full_pyramid_of_numbers(n):
-#     for i in range(0, n+1):
-#         for k in range(1, n-i+1):
-#             print(" ", end="  ")
-#         for j in range(1, i+1):
-#             print(j, end="  ")
+num = int(input())
+def full_pyramid_of_numbers(n):
+    for i in range(0, n+1):
+        for k in range(1, n-i+1):
+            print(" ", end="  ")
+        for j in range(1, i+1):
+            print(j, end="  ")
             
-#         for z in range(i+1, 0, -1):
-#             print(z, end="  ")
-#         print()
+        for z in range(i+1, 0, -1):
+            print(z, end="  ")
+        print()
      
-# full_pyramid_of_numbers(num)
+full_pyramid_of_numbers(num)
 
 
 
@@ -1497,44 +1499,44 @@
 
 
 
-# binom = [[1], [1,1] ]
+binom = [[1], [1,1] ]
 
-# n = int(input())
+n = int(input())
 
-# for i in range(2, n+1):
-#     binom.append([])
-#     binom[i].append(1)
-#     for j in range(1,i):
-#         binom[i].append(binom[i-1][j-1] + binom[i-1][j])
-#     binom[i].append(1)
+for i in range(2, n+1):
+    binom.append([])
+    binom[i].append(1)
+    for j in range(1,i):
+        binom[i].append(binom[i-1][j-1] + binom[i-1][j])
+    binom[i].append(1)
       
-# # print(binom)
+# print(binom)
 
-# for i in binom:
-#     if len(i) < len(binom):
-#         print(" ", end="")
-#     for k in range(len(binom)-len(i)):
-#         print(" ", end=" ")
-#     for j in i:
-#         print(j , end="   ")
-#     print()    
-
-
+for i in binom:
+    if len(i) < len(binom):
+        print(" ", end="")
+    for k in range(len(binom)-len(i)):
+        print(" ", end=" ")
+    for j in i:
+        print(j , end="   ")
+    print()    
 
 
-# rows = int(input("Enter number of rows: "))
-# coef = 1
 
-# for i in range(1, rows+1):
-#     for space in range(1, rows-i+1):
-#         print(" ",end="")
-#     for j in range(0, i):
-#         if j==0 or i==0:
-#             coef = 1
-#         else:
-#             coef = coef * (i - j)//j
-#         print(coef, end = " ")
-#     print()
+
+rows = int(input("Enter number of rows: "))
+coef = 1
+
+for i in range(1, rows+1):
+    for space in range(1, rows-i+1):
+        print(" ",end="")
+    for j in range(0, i):
+        if j==0 or i==0:
+            coef = 1
+        else:
+            coef = coef * (i - j)//j
+        print(coef, end = " ")
+    print()
 
 
 # Bu nümunədə biz üç for döngəsindən istifadə etdik.
@@ -1555,31 +1557,31 @@
 # 7 8 9 10
 
 
-# def floryd_s_triangle(n):
-#     x = 1
-#     for i in range(n):
-#         # x = 1
-#         for j in range(1,i+2):
-#             print(x, end=" ")
-#             x += 1
-#         print()    
+def floryd_s_triangle(n):
+    x = 1
+    for i in range(n):
+        # x = 1
+        for j in range(1,i+2):
+            print(x, end=" ")
+            x += 1
+        print()    
             
             
 
-# num = int(input())
-# floryd_s_triangle(num)            
+num = int(input())
+floryd_s_triangle(num)            
 
 
 
 
-# rows = int(input("Enter number of rows: "))
-# number = 1
+rows = int(input("Enter number of rows: "))
+number = 1
 
-# for i in range(1, rows+1):
-#     for j in range(1, i+1):
-#         print(number, end=" ")
-#         number += 1
-#     print()
+for i in range(1, rows+1):
+    for j in range(1, i+1):
+        print(number, end=" ")
+        number += 1
+    print()
 
 
 
@@ -1605,12 +1607,12 @@
 
 ####    ???????????????????????????????????????
 
-# dt = {'a': 'juice', 'b': 'grill', 'c': 'corn'}
+dt = {'a': 'juice', 'b': 'grill', 'c': 'corn'}
 
-# for key, value in dt.items():
-#     print(key, value)
+for key, value in dt.items():
+    print(key, value)
 
-# [("a", "juice"), ("b", "grill"), ("c", "corn")]
+[("a", "juice"), ("b", "grill"), ("c", "corn")]
 
 
 
@@ -1625,37 +1627,37 @@
 # Python while Loop
 # Nümunə 1: Bir müddət döngəsindən istifadə edərək nömrəni tərsinə çevirin
 
-# num = 1234
+num = 1234
 
 
-# def Reverse_a_Number(n):
-#     return f"{str(n)[::-1]}"
+def Reverse_a_Number(n):
+    return f"{str(n)[::-1]}"
 
-# num = int(input())
-# print(Reverse_a_Number(num))
+num = int(input())
+print(Reverse_a_Number(num))
 
 
-# def Reverse_a_Number(n):
-#     i = 0
-#     str1 = ""
-#     while i < len(str(n)):
-#         str1 += str(n)[len(str(n))-1-i]
-#         i += 1
-#     return str1 
+def Reverse_a_Number(n):
+    i = 0
+    str1 = ""
+    while i < len(str(n)):
+        str1 += str(n)[len(str(n))-1-i]
+        i += 1
+    return str1 
        
-# num = int(input())
-# print(Reverse_a_Number(num))
+num = int(input())
+print(Reverse_a_Number(num))
 
 
 
 
-# num = 1234
-# reversed_num = 0
+num = 1234
+reversed_num = 0
 
-# while num != 0:
-#     digit = num % 10
-#     reversed_num = reversed_num * 10 + digit
-#     num //= 10
+while num != 0:
+    digit = num % 10
+    reversed_num = reversed_num * 10 + digit
+    num //= 10
 
 # print("Reversed Number: " + str(reversed_num))
 
@@ -1682,25 +1684,25 @@
 #  Addım olaraq -1-i keçəndə başlanğıc nöqtəsi sona gedir və öndə dayanır.
 
 
-# def reverse_a_numner(n):
-#     x = reversed(str(n))
-#     for i in x:
-#         print(i, end="")
-#     print()    
+def reverse_a_numner(n):
+    x = reversed(str(n))
+    for i in x:
+        print(i, end="")
+    print()    
 
-# num = int(input())
-# reverse_a_numner(num)    
+num = int(input())
+reverse_a_numner(num)    
 
 
 
-# def reverse_a_numner(n):
-#     x = reversed(n)
-#     for i in x:
-#         print(i, end="")
-#     print()    
+def reverse_a_numner(n):
+    x = reversed(n)
+    for i in x:
+        print(i, end="")
+    print()    
 
-# num = input()
-# reverse_a_numner(num)
+num = input()
+reverse_a_numner(num)
 
 
 
@@ -1723,26 +1725,26 @@
 # eksponent = 4
 
 
-# def Calculate_power_of_a_number(n, z):
-#     return n**z
+def Calculate_power_of_a_number(n, z):
+    return n**z
 
-# num = int(input())
-# power = int(input())
-# print(Calculate_power_of_a_number(num, power))
+num = int(input())
+power = int(input())
+print(Calculate_power_of_a_number(num, power))
 
 
 
-# def Calculate_power_of_number(n, z):
-#     i = 0
-#     y = 1
-#     while i < z:
-#         y *= n
-#         i +=1
-#     return y
+def Calculate_power_of_number(n, z):
+    i = 0
+    y = 1
+    while i < z:
+        y *= n
+        i +=1
+    return y
 
-# num = int(input())
-# power = int(input())
-# print(Calculate_power_of_number(num, power))
+num = int(input())
+power = int(input())
+print(Calculate_power_of_number(num, power))
            
 
 

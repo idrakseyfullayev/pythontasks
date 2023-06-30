@@ -408,18 +408,18 @@
 # 9. int tipli a, b, c dəyişəni götürün. İf elif else operatorlarından istifadə edərək
 # bunlardan ən kiçiyini k dəyişəninə yazaraq çapa verin.
 
-# a = -42
-# b = -78
-# c = 65
+a = -42
+b = -78
+c = 65
 
-# if a < b and a < c:
-#     k = a
-# elif b < c and b < a:
-#     k = b 
-# else:
-#     k = c
+if a < b and a < c:
+    k = a
+elif b < c and b < a:
+    k = b 
+else:
+    k = c
     
-# print(k)
+print(k)
 
 
 
@@ -428,15 +428,15 @@
 # 10. int tipli a və b dəyişəni götürün. Əgər a b-dən böyükdürsə, a+b, a b-dən kiçikdirsə, a-
 # b, a b-yə bərabərdirsə, a-nı çapa verin.
 
-# a = 1001
-# b = 2002
+a = 1001
+b = 2002
 
-# if a > b:
-#     print(a+b)
-# elif a < b:
-#     print(a-b)
-# else:
-#     print(a)        
+if a > b:
+    print(a+b)
+elif a < b:
+    print(a-b)
+else:
+    print(a)        
 
 
 

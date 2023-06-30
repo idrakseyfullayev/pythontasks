@@ -1568,17 +1568,43 @@ set = {1, 3}
 
 
 
-ad = "Zamin"
+# ad = "Zamin"
 
-for i in ad:
-    print(i)
+# for i in ad:
+# #     print(i)
     
 
 
 
 
 
+# a = "Salam"
+# b =  'Azerbaycan'
+# c = 'can'
+# print(a, b, c)
+
+# print("{} menim olkemdir {} can {}".format(b, a, c))
+
+# print("%s   %s     %s " % (b, a, c))
+
+# print(f'{b} 2 {a} 2 {c}')
 
 
+# b = 'salam'
+# x = b.index("l")
+# print(x)
 
 
+# a = (100, -3, 4, 1, 0, 3, 8, 8, 9)
+# b = (4,5)
+# print(a+b)
+
+# c = a.index(8)
+# print(c)
+
+
+a = {1, 3, 5}
+b = {1, 5}
+
+c = a.difference(b)
+print(c)

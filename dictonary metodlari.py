@@ -42,53 +42,53 @@
 
                                    ### dictionary metodlarinin formullari ### 
 
-kitab = {
-    "Ad1": "Oyunbaz",
-    "Muellfif": "Vulf Dorn",
-    "Sehife_sayi": 452,
-    "Reytinq": 4.7,
-    "Reyciler": ["Tom Hanks", "Chris Evans"]
-}    
+# kitab = {
+#     "Ad1": "Oyunbaz",
+#     "Muellfif": "Vulf Dorn",
+#     "Sehife_sayi": 452,
+#     "Reytinq": 4.7,
+#     "Reyciler": ["Tom Hanks", "Chris Evans"]
+# }    
 
 
-Film = {
-    "Ad": "The Martian",
-    "Reytinq": 8.1,
-    "Rejissor": ["", ""],
-    "Aktyorlar": ["Mat Damon", ""],
-    "Sloqan": "jkjkj",
-    "Muellif": {
-        "Ad": "",
-        "Soyad": ""
-    }
-}
+# Film = {
+#     "Ad": "The Martian",
+#     "Reytinq": 8.1,
+#     "Rejissor": ["", ""],
+#     "Aktyorlar": ["Mat Damon", ""],
+#     "Sloqan": "jkjkj",
+#     "Muellif": {
+#         "Ad": "",
+#         "Soyad": ""
+#     }
+# }
 
 
-Dict = {}
+# Dict = {}
 
-Dict1 = Dict.fromkeys("Salam", 5)
+# Dict1 = Dict.fromkeys("Salam", 5)
 
-print(Dict1)
+# print(Dict1)
 
 
-Ad1 = kitab.get("Ad")
-Ad2 = kitab["Ad"]
-kitab1 = kitab.items()
-kitab1 = kitab.keys()
-kitab1 = kitab.values()
-kitab.pop("Ad")
-kitab.popitem()
-kitab["Qiymet"] = 5
-kitab.setdefault("Qiymet", 5)
-kitab.update(Film)
-Dict1 = Dict.fromkeys("Salam", 5)
-kitab.clear()
-kitab1 = kitab.copy()
+# Ad1 = kitab.get("Ad")
+# Ad2 = kitab["Ad"]
+# kitab1 = kitab.items()
+# kitab1 = kitab.keys()
+# kitab1 = kitab.values()
+# kitab.pop("Ad")
+# kitab.popitem()
+# kitab["Qiymet"] = 5
+# kitab.setdefault("Qiymet", 5)
+# kitab.update(Film)
+# Dict1 = Dict.fromkeys("Salam", 5)
+# kitab.clear()
+# kitab1 = kitab.copy()
 
-dictionary_one = {"a": 1, "b": 2}
-dictionary_two = {"c": 3, "d": 4}
+# dictionary_one = {"a": 1, "b": 2}
+# dictionary_two = {"c": 3, "d": 4}
 
-merged = {**dictionary_one, **dictionary_two}
+# merged = {**dictionary_one, **dictionary_two}
 # output {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 
 
@@ -117,5 +117,39 @@ merged = {**dictionary_one, **dictionary_two}
 
 
 
+# c = set({})
+# print(type(c))
+
+
+
+# kitab = {}
+
+# print(type(kitab))
+
+
+
+kitab = {
+    "Ad": "Oyunbaz",
+    "Muellif": "Vulf Dorn",
+    "Sehife_sayi": 452,
+    "Reytinq": 4.7,
+    "Reyciler": ["Tom Hanks", "Chris Evans"], 
+}
+
+
+Film = {
+    "Ad": "The Martian",
+    "Reytinq": 8.1,
+    "Rejissor": ["", ""],
+    "Aktyorlar": ["Mat Damon", ""],
+    "Sloqan": "jkjkj",
+    "Muellif": {
+        "Ad": "",
+        "Soyad": ""
+    }
+}
+
+# kitab.update(Film)
+# print(kitab)
 
 

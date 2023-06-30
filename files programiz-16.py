@@ -24,21 +24,21 @@
 # Body of the mail is in body.txt
 
 # open names.txt for reading
-# with open("names.txt", 'r', encoding='utf-8') as names_file:
+with open("names.txt", 'r', encoding='utf-8') as names_file:
 
-#     # open body.txt for reading
-#     with open("body.txt", 'r', encoding='utf-8') as body_file:
+    # open body.txt for reading
+    with open("body.txt", 'r', encoding='utf-8') as body_file:
 
-#         # read entire content of the body
-#         body = body_file.read()
+        # read entire content of the body
+        body = body_file.read()
 
-#         # iterate over names
-#         for name in names_file:
-#             mail = "Hello " + name.strip() + "\n" + body
+        # iterate over names
+        for name in names_file:
+            mail = "Hello " + name.strip() + "\n" + body
 
-#             # write the mails to individual files
-#             with open(name.strip()+".txt", 'w', encoding='utf-8') as mail_file:
-#                 mail_file.write(mail)
+            # write the mails to individual files
+            with open(name.strip()+".txt", 'w', encoding='utf-8') as mail_file:
+                mail_file.write(mail)
 
 
 # 2.Python Program to Find the Size (Resolution) of a Image
@@ -62,30 +62,30 @@
 # JPEG Şəklin Tapılma Qətiyyətinin Mənbə Kodu
 
 
-# def jpeg_res(filename):
-#    """This function prints the resolution of the jpeg image file passed into it"""
-#    """Bu funksiya ona ötürülən jpeg şəkil faylının həllini çap edir"""
+def jpeg_res(filename):
+   """This function prints the resolution of the jpeg image file passed into it"""
+   """Bu funksiya ona ötürülən jpeg şəkil faylının həllini çap edir"""
    
 
-#    # open image for reading in binary mode
-#    with open(filename,'rb') as img_file:
+   # open image for reading in binary mode
+   with open(filename,'rb') as img_file:
 
-#        # height of image (in 2 bytes) is at 164th position
-#        img_file.seek(163)
+       # height of image (in 2 bytes) is at 164th position
+       img_file.seek(163)
 
-#        # read the 2 bytes
-#        a = img_file.read(2)
+       # read the 2 bytes
+       a = img_file.read(2)
 
-#        # calculate height
-#        height = (a[0] << 8) + a[1]
+       # calculate height
+       height = (a[0] << 8) + a[1]
 
-#        # next 2 bytes is width
-#        a = img_file.read(2)
+       # next 2 bytes is width
+       a = img_file.read(2)
 
-#        # calculate width
-#        width = (a[0] << 8) + a[1]
+       # calculate width
+       width = (a[0] << 8) + a[1]
 
-#    print("The resolution of the image is",width,"x",height)
+   print("The resolution of the image is",width,"x",height)
 
 # jpeg_res("img1.jpg")
 

@@ -289,53 +289,53 @@ print(f"{list12[-1]} en boyuk elementdir, {list12[0]} en kicik elementdir")
 # elementlərini çap edin.
 
 
-# list6 = []
-# a6 = int(input())
+list6 = []
+a6 = int(input())
 
-# for i in range(a6):
-#     b6 = int(input())
-#     b7 = int(input())
-#     list6.append([b6,b7])
+for i in range(a6):
+    b6 = int(input())
+    b7 = int(input())
+    list6.append([b6,b7])
 
-# print(list6)
+print(list6)
 
-# for i in list6:
-#     max = i[0]
-#     for j in range(1, len(i)):
-#         if i[j] > max:
-#             max = i[j]
+for i in list6:
+    max = i[0]
+    for j in range(1, len(i)):
+        if i[j] > max:
+            max = i[j]
     
-#     print(max, end=" ") 
+    print(max, end=" ") 
 
 
 
 
 ############################################    
 
-# list6 = []
-# a6 = int(input())
+list6 = []
+a6 = int(input())
 
-# i = 0
-# while i < a6:
-#     b6 = int(input())
-#     b7 = int(input())
-#     list6.append([b6, b7])
-#     i +=1
+i = 0
+while i < a6:
+    b6 = int(input())
+    b7 = int(input())
+    list6.append([b6, b7])
+    i +=1
 
-# print(list6)    
+print(list6)    
 
 
-# i = 0
-# while i < len(list6):
-#     x =list6[i]
-#     j = 1
-#     max = x[0]
-#     while j < len(x):
-#         if x[j] > max:
-#             max = x[j]
-#         j += 1
-#     i += 1
-#     print(max, end=", ")
+i = 0
+while i < len(list6):
+    x =list6[i]
+    j = 1
+    max = x[0]
+    while j < len(x):
+        if x[j] > max:
+            max = x[j]
+        j += 1
+    i += 1
+    print(max, end=", ")
 
 
 
@@ -343,53 +343,53 @@ print(f"{list12[-1]} en boyuk elementdir, {list12[0]} en kicik elementdir")
 # 7. Elementləri list olan bir list dəyişəni (matris) götürün. Bu matrisdə olan ən böyük
 # elementi çap edin.
 
-# list7 = []
-# a7 = int(input())
+list7 = []
+a7 = int(input())
 
-# for i in range(a7):
-#     b7 = int(input())
-#     b8 = int(input())
-#     list7.append([b7,b8])
+for i in range(a7):
+    b7 = int(input())
+    b8 = int(input())
+    list7.append([b7,b8])
 
-# print(list7)
+print(list7)
 
-# max = list7[0][0]
+max = list7[0][0]
 
-# for i in list7:
-#     for j in i:
-#         if j > max:
-#             max = j
+for i in list7:
+    for j in i:
+        if j > max:
+            max = j
 
-# print(max)
+print(max)
 
 #############################################
 
 
-# list7 = []
-# a7 = int(input())
+list7 = []
+a7 = int(input())
 
-# i = 0
-# while i <a7:
-#     b7 = int(input())
-#     b8 = int(input())
-#     list7.append([b7,b8])
-#     i +=1
+i = 0
+while i <a7:
+    b7 = int(input())
+    b8 = int(input())
+    list7.append([b7,b8])
+    i +=1
 
-# print(list7)
+print(list7)
 
-# max = list7[0][0]
+max = list7[0][0]
 
-# i = 0
-# while i < len(list7):
-#     x = list7[i]
-#     j = 0
-#     while j < len(x):
-#         if x[j] > max:
-#             max = x[j]
-#         j +=1            
-#     i += 1
+i = 0
+while i < len(list7):
+    x = list7[i]
+    j = 0
+    while j < len(x):
+        if x[j] > max:
+            max = x[j]
+        j +=1            
+    i += 1
 
-# print(max)
+print(max)
 
 
 

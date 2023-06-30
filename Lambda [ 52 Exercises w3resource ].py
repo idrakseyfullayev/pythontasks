@@ -9,23 +9,23 @@
 # 1. Arqument kimi ötürülən verilmiş ədədə 15 əlavə edən lambda funksiyası yaratmaq üçün Python proqramı yazın, 
 # həmçinin x arqumentini y arqumenti ilə çoxaldan lambda funksiyası yaradın və nəticəni çap edin. Redaktora gedin
 
-# func_adds_15 = lambda n: n + 15
+func_adds_15 = lambda n: n + 15
 
-# n = 5
-# print(func_adds_15(n))
-
-
-# func_multiplies = lambda x, y: x * y
-
-# x = int(input("enter number_1:"))
-# y = int(input("enter number_2:"))
-# print(func_multiplies(x, y))
+n = 5
+print(func_adds_15(n))
 
 
-# r = lambda a : a + 15
-# print(r(10))
-# r = lambda x, y : x * y
-# print(r(12, 4))
+func_multiplies = lambda x, y: x * y
+
+x = int(input("enter number_1:"))
+y = int(input("enter number_2:"))
+print(func_multiplies(x, y))
+
+
+r = lambda a : a + 15
+print(r(10))
+r = lambda x, y : x * y
+print(r(12, 4))
 
 
 
@@ -46,16 +46,16 @@
 # 15 = 75 rəqəmini beşliyə çatdırın
 
 
-# def func_compute(n):
-#  return lambda x : x * n
-# result = func_compute(2)
-# print("Double the number of 15 =", result(15))
-# result = func_compute(3)
-# print("Triple the number of 15 =", result(15))
-# result = func_compute(4)
-# print("Quadruple the number of 15 =", result(15))
-# result = func_compute(5)
-# print("Quintuple the number 15 =", result(15))
+def func_compute(n):
+ return lambda x : x * n
+result = func_compute(2)
+print("Double the number of 15 =", result(15))
+result = func_compute(3)
+print("Triple the number of 15 =", result(15))
+result = func_compute(4)
+print("Quadruple the number of 15 =", result(15))
+result = func_compute(5)
+print("Quintuple the number 15 =", result(15))
 
 
 
@@ -73,19 +73,19 @@
 
 
 
-# list1 = [('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]
+list1 = [('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]
 
-# list1.sort(key=lambda x: x[0])
-# print(list1)
+list1.sort(key=lambda x: x[0])
+print(list1)
 
 # ???????????????????????????????????????????????????????????????
 
-# subject_marks = [('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]
-# print("Original list of tuples:")
-# print(subject_marks)
-# subject_marks.sort(key = lambda x: x[1])
-# print("\nSorting the List of Tuples:")
-# print(subject_marks)
+subject_marks = [('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]
+print("Original list of tuples:")
+print(subject_marks)
+subject_marks.sort(key = lambda x: x[1])
+print("\nSorting the List of Tuples:")
+print(subject_marks)
 
 
 
@@ -109,21 +109,21 @@
 # { 'make': 'Mi Max', 'model': '2', 'rəng': 'Qızıl'}]
 
 
-# list1 = [{'make': 'Nokia', 'model': 216, 'color': 'Black'}, {'make': 'Mi Max', 'model': '2', 'color': 'Gold'},
-# {'make': 'Samsung', 'model': 7, 'color': 'Blue'}]
+list1 = [{'make': 'Nokia', 'model': 216, 'color': 'Black'}, {'make': 'Mi Max', 'model': '2', 'color': 'Gold'},
+{'make': 'Samsung', 'model': 7, 'color': 'Blue'}]
 
-# list1.sort(key=lambda x: x["color"])
+list1.sort(key=lambda x: x["color"])
 
-# print(list1)
+print(list1)
 
 
 
-# models = [{'make':'Nokia', 'model':216, 'color':'Black'}, {'make':'Mi Max', 'model':'2', 'color':'Gold'}, {'make':'Samsung', 'model': 7, 'color':'Blue'}]
-# print("Original list of dictionaries :")
-# print(models)
-# sorted_models = sorted(models, key = lambda x: x['color'])
-# print("\nSorting the List of dictionaries :")
-# print(sorted_models)
+models = [{'make':'Nokia', 'model':216, 'color':'Black'}, {'make':'Mi Max', 'model':'2', 'color':'Gold'}, {'make':'Samsung', 'model': 7, 'color':'Blue'}]
+print("Original list of dictionaries :")
+print(models)
+sorted_models = sorted(models, key = lambda x: x['color'])
+print("\nSorting the List of dictionaries :")
+print(sorted_models)
 
 
 
@@ -147,46 +147,46 @@
 
 
 
-# org_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-# even_num_list = list(filter(lambda x: not x % 2, org_list ))
-# print(f"Even numbers from the said list:\n{even_num_list}")
+org_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_num_list = list(filter(lambda x: not x % 2, org_list ))
+print(f"Even numbers from the said list:\n{even_num_list}")
 
-# odd_num_list = list(filter(lambda x: x % 2, org_list))
-# print(f"Odd numbers from the said list:\n{odd_num_list}")
-
-
+odd_num_list = list(filter(lambda x: x % 2, org_list))
+print(f"Odd numbers from the said list:\n{odd_num_list}")
 
 
 
 
-# nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-# print("Original list of integers:")
-# print(nums)
-# print("\nEven numbers from the said list:")
-# even_nums = list(filter(lambda x: x%2 == 0, nums))
-# print(even_nums)
-# print("\nOdd numbers from the said list:")
-# odd_nums = list(filter(lambda x: x%2 != 0, nums))
-# print(odd_nums)
 
 
-# print((lambda x: (x % 2 and 'Odd number' or 'Even number'))(5))
-# print((lambda x: (x % 2 and 'Odd number' or 'Even number'))(8))
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print("Original list of integers:")
+print(nums)
+print("\nEven numbers from the said list:")
+even_nums = list(filter(lambda x: x%2 == 0, nums))
+print(even_nums)
+print("\nOdd numbers from the said list:")
+odd_nums = list(filter(lambda x: x%2 != 0, nums))
+print(odd_nums)
 
-# print((lambda x: not x % 2 and "even number" or "odd number")(int(input())))
 
-# y = lambda x: not x % 2 and "cut eded" or "tek eded"
-# x = int(input())
-# print(y(x))
+print((lambda x: (x % 2 and 'Odd number' or 'Even number'))(5))
+print((lambda x: (x % 2 and 'Odd number' or 'Even number'))(8))
 
-# print((lambda x: 2**x)(4)) 
+print((lambda x: not x % 2 and "even number" or "odd number")(int(input())))
+
+y = lambda x: not x % 2 and "cut eded" or "tek eded"
+x = int(input())
+print(y(x))
+
+print((lambda x: 2**x)(4)) 
 
 
-# def test(n):
-#     if n < 2:
-#         return n % 2 == 0
-#     return test(n-2)
-# print(test(23))        
+def test(n):
+    if n < 2:
+        return n % 2 == 0
+    return test(n-2)
+print(test(23))        
 
 
 
@@ -207,14 +207,14 @@
 # Sözügedən siyahının hər nömrəsini kub edin:
 # [1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
 
-# org_integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-# print(f"Original list of integers:\n{org_integers}")
+org_integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(f"Original list of integers:\n{org_integers}")
 
-# square_umber_list = list(map(lambda x: x**2, org_integers)) 
-# print(f"Square every number of the said list:\n{square_umber_list}")
+square_umber_list = list(map(lambda x: x**2, org_integers)) 
+print(f"Square every number of the said list:\n{square_umber_list}")
 
-# Cube_number_list = list(map(lambda x: x**3, org_integers))
-# print(f"Cube every number of the said list:\n{Cube_number_list}")
+Cube_number_list = list(map(lambda x: x**3, org_integers))
+print(f"Cube every number of the said list:\n{Cube_number_list}")
 
 
 
@@ -229,50 +229,50 @@
 # Doğru
 # Yalan
 
-# def check_starts_given_character(character,string1):
-#     if character == string1[0]:
-#         return True
-#     else:
-#         return False
+def check_starts_given_character(character,string1):
+    if character == string1[0]:
+        return True
+    else:
+        return False
 
-# character = input()
-# string1 = input()
-# print(check_starts_given_character(character, string1))
-
-
-
-# def check_starts_given_character(character,string1):
-#     if character in string1[0]:
-#         return True
-#     else:
-#         return False
-
-# character = input()
-# string1 = input()
-# print(check_starts_given_character(character, string1))
+character = input()
+string1 = input()
+print(check_starts_given_character(character, string1))
 
 
 
-# def check_starts_given_character(character,string1):
-#     return string1.startswith(character)
+def check_starts_given_character(character,string1):
+    if character in string1[0]:
+        return True
+    else:
+        return False
 
-# character = input()
-# string1 = input()
-# print(check_starts_given_character(character, string1))
-
-
-# result = lambda x: x.startswith(character)
-# character = input()
-# string1 = input()
-
-# print(result(string1))
+character = input()
+string1 = input()
+print(check_starts_given_character(character, string1))
 
 
 
-# starts_with = lambda x: True if x.startswith('P') else False
-# print(starts_with('Python'))
-# starts_with = lambda x: True if x.startswith('P') else False
-# print(starts_with('Java'))
+def check_starts_given_character(character,string1):
+    return string1.startswith(character)
+
+character = input()
+string1 = input()
+print(check_starts_given_character(character, string1))
+
+
+result = lambda x: x.startswith(character)
+character = input()
+string1 = input()
+
+print(result(string1))
+
+
+
+starts_with = lambda x: True if x.startswith('P') else False
+print(starts_with('Python'))
+starts_with = lambda x: True if x.startswith('P') else False
+print(starts_with('Java'))
 
 
 
@@ -294,28 +294,28 @@
 # 09:03:32.744178
 
 
-# import datetime
-# now = datetime.datetime.now()
-# # import calendar
-# # n = calendar.month(now.year, now.month)
-# # print(n)
-# print(f"""{now}
-# {now.year}
-# {now.month}
-# {now.day}
-# {now.time()}""")
+import datetime
+now = datetime.datetime.now()
+# import calendar
+# n = calendar.month(now.year, now.month)
+# print(n)
+print(f"""{now}
+{now.year}
+{now.month}
+{now.day}
+{now.time()}""")
 
-# import datetime
-# now = datetime.datetime.now()
-# print(now)
-# year = lambda x: x.year
-# print(year(now))
-# month = lambda x: x.month
-# print(month(now))
-# day = lambda x: x.day
-# print(day(now))
-# time = lambda x: x.time()
-# print(time(now))
+import datetime
+now = datetime.datetime.now()
+print(now)
+year = lambda x: x.year
+print(year(now))
+month = lambda x: x.month
+print(month(now))
+day = lambda x: x.day
+print(day(now))
+time = lambda x: x.time()
+print(time(now))
 
 
 
@@ -342,40 +342,40 @@
 # Doğru
 
 
-# string1 = input()
+string1 = input()
 
-# check_srting_is_num = lambda x: x.replace(".","").replace("-","").isdigit()
-# print(check_srting_is_num(string1))
-
-
-# string1 = input()
-
-# check_srting_is_num = lambda x: "is number" if x.replace(".","").replace("-","").isdigit() else "isn't number"
-# print(check_srting_is_num(string1))
+check_srting_is_num = lambda x: x.replace(".","").replace("-","").isdigit()
+print(check_srting_is_num(string1))
 
 
-# def check_srting_is_num(string1):
-#     try:
-#         float(string1) 
-#     except (NameError, ValueError):
-#         return "isn't num"
-#     return "is num"        
+string1 = input()
 
-# string1 = 'ty'
-# print(check_srting_is_num(string1))
+check_srting_is_num = lambda x: "is number" if x.replace(".","").replace("-","").isdigit() else "isn't number"
+print(check_srting_is_num(string1))
 
 
-# is_num = lambda q: q.replace('.','',1).isdigit()
-# print(is_num('26587'))
-# print(is_num('4.2365'))
-# print(is_num('-12547'))
-# print(is_num('00'))
-# print(is_num('A001'))
-# print(is_num('001'))
-# print("\nPrint checking numbers:")
-# is_num1 = lambda r: is_num(r[1:]) if r[0]=='-' else is_num(r) #????????????????????????????????????????
-# print(is_num1('-16.4'))
-# print(is_num1('-24587.11'))
+def check_srting_is_num(string1):
+    try:
+        float(string1) 
+    except (NameError, ValueError):
+        return "isn't num"
+    return "is num"        
+
+string1 = 'ty'
+print(check_srting_is_num(string1))
+
+
+is_num = lambda q: q.replace('.','',1).isdigit()
+print(is_num('26587'))
+print(is_num('4.2365'))
+print(is_num('-12547'))
+print(is_num('00'))
+print(is_num('A001'))
+print(is_num('001'))
+print("\nPrint checking numbers:")
+is_num1 = lambda r: is_num(r[1:]) if r[0]=='-' else is_num(r) #????????????????????????????????????????
+print(is_num1('-16.4'))
+print(is_num1('-24587.11'))
 
 
 
@@ -404,10 +404,10 @@
 # Nümunə həllini görmək üçün mənə klikləyin
 
 # ??????????????????????????????????????????????????????/
-# from functools import reduce
+from functools import reduce
 
-# fib_series = lambda n: reduce(lambda x, _: x+[x[-1]+ x[-2]], range(n-2), [0, 1])
-# print(fib_series(10))
+fib_series = lambda n: reduce(lambda x, _: x+[x[-1]+ x[-2]], range(n-2), [0, 1])
+print(fib_series(10))
 
 
 
@@ -428,11 +428,11 @@
 # Nümunə həllini görmək üçün mənə klikləyin
 
 
-# list_1 = [1, 2, 3, 5, 7, 8, 9, 10]
-# list_2 = [1, 2, 4, 8, 9]
+list_1 = [1, 2, 3, 5, 7, 8, 9, 10]
+list_2 = [1, 2, 4, 8, 9]
 
-# list_intersection = list(filter(lambda x: x in list_2, list_1))
-# print(list_intersection)
+list_intersection = list(filter(lambda x: x in list_2, list_1))
+print(list_intersection)
 
 
 
@@ -454,32 +454,32 @@
 # Nümunə həllini görmək üçün mənə klikləyin
 
 
-# list_org = [-1, 2, -3, 5, 7, 8, 9, -10]
+list_org = [-1, 2, -3, 5, 7, 8, 9, -10]
 
-# list_pos = []
-# list_neg = []
+list_pos = []
+list_neg = []
 
-# y = list(filter(lambda x: list_pos.append(x) if x > 0 else list_neg.append(x), list_org))
+y = list(filter(lambda x: list_pos.append(x) if x > 0 else list_neg.append(x), list_org))
 
-# list_pos.sort()
-# list_neg.sort()
-# list_rearrange = list_pos + list_neg
-# print(list_rearrange)
-
-
+list_pos.sort()
+list_neg.sort()
+list_rearrange = list_pos + list_neg
+print(list_rearrange)
 
 
-# array_nums = [-1, 2, -3, 5, 7, 8, 9, -10]
-# print("Original arrays:")
-# print(array_nums)
-# result = sorted(array_nums, key = lambda i: 0 if i == 0 else -1 / i)
-# print("\nRearrange positive and negative numbers of the said array:")
-# print(result)
 
 
-# array_nums = [-1, 2, -3, 5, 7, 8, 9, -10]
-# array_nums.sort(key=lambda i: 0 if i == 0 else -1 / i)
-# print(array_nums)
+array_nums = [-1, 2, -3, 5, 7, 8, 9, -10]
+print("Original arrays:")
+print(array_nums)
+result = sorted(array_nums, key = lambda i: 0 if i == 0 else -1 / i)
+print("\nRearrange positive and negative numbers of the said array:")
+print(result)
+
+
+array_nums = [-1, 2, -3, 5, 7, 8, 9, -10]
+array_nums.sort(key=lambda i: 0 if i == 0 else -1 / i)
+print(array_nums)
 
 
 # 13. Write a Python program to count the even and odd numbers in a given array of integers using Lambda. Go to the editor
@@ -496,26 +496,26 @@
 # Yuxarıdakı massivdəki tək ədədlərin sayı: 5
 
 
-# org_list = [1, 2, 3, 5, 7, 8, 9, 10]
-# list_even = []
-# list_odd = []
-# list(map(lambda x: list_even.append(x) if not x % 2 else list_odd.append(x), org_list))
-# n_even_num = len(list_even)
-# n_odd_num = len(list_odd)
-# print(
-# f"""Number of even numbers in the above array: {n_even_num}
-# Number of odd numbers in the above array: {n_odd_num}"""
-# )
+org_list = [1, 2, 3, 5, 7, 8, 9, 10]
+list_even = []
+list_odd = []
+list(map(lambda x: list_even.append(x) if not x % 2 else list_odd.append(x), org_list))
+n_even_num = len(list_even)
+n_odd_num = len(list_odd)
+print(
+f"""Number of even numbers in the above array: {n_even_num}
+Number of odd numbers in the above array: {n_odd_num}"""
+)
 
 
 
-# array_nums = [1, 2, 3, 5, 7, 8, 9, 10]
-# print("Original arrays:")
-# print(array_nums)
-# odd_ctr = len(list(filter(lambda x: (x%2 != 0) , array_nums)))
-# even_ctr = len(list(filter(lambda x: (x%2 == 0) , array_nums)))
-# print("\nNumber of even numbers in the above array: ", even_ctr)
-# print("\nNumber of odd numbers in the above array: ", odd_ctr)
+array_nums = [1, 2, 3, 5, 7, 8, 9, 10]
+print("Original arrays:")
+print(array_nums)
+odd_ctr = len(list(filter(lambda x: (x%2 != 0) , array_nums)))
+even_ctr = len(list(filter(lambda x: (x%2 == 0) , array_nums)))
+print("\nNumber of even numbers in the above array: ", even_ctr)
+print("\nNumber of odd numbers in the above array: ", odd_ctr)
 
 
 
@@ -534,32 +534,32 @@
 # cümə
 # bazar günü
 
-# weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-# list_1 = []
-# days = list(filter(lambda x: x if len(x)==6 else "", weekdays))
-# print("\n".join(days))
-# print(list_1)
+weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+list_1 = []
+days = list(filter(lambda x: x if len(x)==6 else "", weekdays))
+print("\n".join(days))
+print(list_1)
 
-# i = 0
-# while i < len(days):
-#     print(days[i])
-#     i+=1
+i = 0
+while i < len(days):
+    print(days[i])
+    i+=1
 
-# i = 0
-# while True:
-#     print(days[i])
-#     i+=1
-#     if i == len(days):
-#         break
-
-
+i = 0
+while True:
+    print(days[i])
+    i+=1
+    if i == len(days):
+        break
 
 
 
-# weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-# days = filter(lambda day: day if len(day)==6 else '', weekdays)
-# for d in days:
-#   print(d)
+
+
+weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+days = filter(lambda day: day if len(day)==6 else '', weekdays)
+for d in days:
+  print(d)
 
 
 
@@ -580,69 +580,69 @@
 # [5, 7, 9]
 # Nümunə həllini görmək üçün mənə klikləyin
 
-# list_1 = [1, 2, 3]
-# list_2 = [4, 5, 6, 10, 17, 10, 100]
-# list_add = []
+list_1 = [1, 2, 3]
+list_2 = [4, 5, 6, 10, 17, 10, 100]
+list_add = []
     
-# for i in range(len(list_1)):
-#     list_add.append(list_1[i] +list_2[i])  
-# print(list_add)      
-# list_3 = []
-# list_add = list(map(lambda x,y: x+y, list_1, list_2 ))
-# print(list_add)
-# print(list_3)
+for i in range(len(list_1)):
+    list_add.append(list_1[i] +list_2[i])  
+print(list_add)      
+list_3 = []
+list_add = list(map(lambda x,y: x+y, list_1, list_2 ))
+print(list_add)
+print(list_3)
 
    
 
-# nums1 = [1, 2, 3]
-# nums2 = [4, 5, 6]
-# print("Original list:")
-# print(nums1)
-# print(nums2)
-# result = map(lambda x, y: x + y, nums1, nums2)
-# print("\nResult: after adding two list")
-# print(list(result))
+nums1 = [1, 2, 3]
+nums2 = [4, 5, 6]
+print("Original list:")
+print(nums1)
+print(nums2)
+result = map(lambda x, y: x + y, nums1, nums2)
+print("\nResult: after adding two list")
+print(list(result))
 
 
 
 
-# list_1 = [1, 2, 3, 10, 15, 100, -11]
-# list_2 = [4, 5, 6]
+list_1 = [1, 2, 3, 10, 15, 100, -11]
+list_2 = [4, 5, 6]
 
-# if len(list_1) > len(list_2):
-#     t = len(list_1)-len(list_2)
-#     z = 0
-#     for i in range(t):
-#         list_2.append(z)
-# else:
-#     t = len(list_2) - len(list_1)
-#     z = 0
-#     for i in range(t):
-#         list_1.append(z)        
+if len(list_1) > len(list_2):
+    t = len(list_1)-len(list_2)
+    z = 0
+    for i in range(t):
+        list_2.append(z)
+else:
+    t = len(list_2) - len(list_1)
+    z = 0
+    for i in range(t):
+        list_1.append(z)        
 
-# list_4 = []
-# for i, j in zip(list_1, list_2):
-#     list_4.append(i+j)
-# print(list_4) 
+list_4 = []
+for i, j in zip(list_1, list_2):
+    list_4.append(i+j)
+print(list_4) 
 
 
 
-# list_1 = [1, 2, 3, 10, 15, 100, -11]
-# list_2 = [4, 5, 6, 10, 15]
+list_1 = [1, 2, 3, 10, 15, 100, -11]
+list_2 = [4, 5, 6, 10, 15]
 
-# if len(list_1)>len(list_2):
-#     list_3 = list_1
-#     length = len(list_2)
-# else:
-#     list_3 = list_2
-#     length = len(list_1)
+if len(list_1)>len(list_2):
+    list_3 = list_1
+    length = len(list_2)
+else:
+    list_3 = list_2
+    length = len(list_1)
 
-# print(list_3)
-# print(length)
-# for i in range(length):
-#     list_3[i] = list_1[i] +list_2[i]
+print(list_3)
+print(length)
+for i in range(length):
+    list_3[i] = list_1[i] +list_2[i]
 
-# print(list_3)
+print(list_3)
 
 
 

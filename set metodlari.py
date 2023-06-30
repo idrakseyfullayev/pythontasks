@@ -93,3 +93,16 @@ j = set1.isdisjoint(set2)
 # issubset()
 # issuperset()
 # isdisjoint()
+
+
+
+aset = {1,3.5, 5, 90}
+bset = {"salam"}
+tset = {}
+
+c = aset.isdisjoint(bset)
+print(c)
+
+
+
+
